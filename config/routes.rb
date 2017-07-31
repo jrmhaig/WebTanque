@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     post '/user/authenticate'
     post '/user/register'
+    post '/battle/match'
     get '/battle/random'
   end
 

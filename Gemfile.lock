@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jrmhaig/RTanque
-  revision: fc7763c39ace8f5a6a5cca4aeb9f018e82ceec6e
+  revision: 55225b2a3dccf70f315d3ea383fcdd2838a80f93
   branch: online_battle
   specs:
     rtanque (0.1.2)

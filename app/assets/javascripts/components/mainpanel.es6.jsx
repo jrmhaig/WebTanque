@@ -47,14 +47,24 @@ class MainPanel extends React.Component {
   render() {
     var self = this;
     return (
-      <div className="panel panel-default">
-        <div className="panel-heading"><h1 className="panel-title">Arena</h1></div>
-        <div ref={input => {this.arenaPanel = input}} className="panel-body">
-          <Arena
-            arenaWidth={this.state.arenaWidth}
-            arenaHeight={this.state.arenaHeight}
-            size={this.state.size}
-            getFrame={this.getFrame} />
+      <div>
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h1 className="panel-title">Battle</h1>
+          </div>
+          <div className="panel-body">
+            <SelectBots />
+          </div>
+        </div>
+        <div className="panel panel-default">
+          <div className="panel-heading"><h1 className="panel-title">Arena</h1></div>
+          <div ref={input => {this.arenaPanel = input}} className="panel-body">
+            <Arena
+              arenaWidth={this.state.arenaWidth}
+              arenaHeight={this.state.arenaHeight}
+              size={this.state.size}
+              getFrame={this.getFrame} />
+          </div>
         </div>
       </div>
     );

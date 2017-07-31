@@ -1,5 +1,8 @@
 module Api
   class BattleController < ApplicationController
+    def match
+    end
+
     def random
       brain_paths = [
         'sample_bots/seek_and_destroy.rb',
